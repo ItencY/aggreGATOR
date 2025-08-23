@@ -7,7 +7,7 @@ type Config = {
 };
 
 function getConfigFilePath(): string {
-    const configFilePath = ".gatorconfig";
+    const configFilePath = ".gatorconfig.json";
     const homeDir = os.homedir();
     return path.join(configFilePath, homeDir);
 }
