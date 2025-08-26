@@ -1,6 +1,6 @@
-import { deleteUsers } from "src/lib/db/queries/users";
+import { deleteUsers } from "../lib/db/queries/users";
 
-export async function handlerReset() {
-    await deleteUsers();
-    console.log("Database reset successfully!");
+export async function handlerReset(_: string) {
+  await deleteUsers();
+  console.log("Database reset successfully!");
 }
