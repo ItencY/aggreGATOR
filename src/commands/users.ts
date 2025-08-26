@@ -12,7 +12,7 @@ export async function handlerLogin(cmdName: string, ...args: string[]) {
         throw new Error(`User ${userName} not found`);
     }
 
-    setUser(userName);
+    setUser(existingUser.name);
     console.log("User switched successfully!");
 }
 
